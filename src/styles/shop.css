@@ -1,0 +1,51 @@
+.filter_widget select{
+padding: 8px 20px;
+border: 1px solid var(--primary-color);
+cursor: pointer;
+border-radius: 5px;
+background-color: var(--primary-color);
+color: #fff;
+}
+.filter_widget select option{
+font-size: 0.9rem;
+}
+
+.filter_widget select :focus{
+    outline: none !important;
+}
+
+.search_box{
+width: 100%;
+display: flex;                  /* الفليكس شان نحطن جنب بعض*/
+align-items: center;
+justify-content: space-between;
+border: 1px solid var(--primary-color);   /*عملنا اطار حو كل الديف لبحث مع ايقونته*/
+column-gap: 10px;
+padding-right: 12px;                /*    لتقريب الايقونة اكثر نحو الداخل */
+/* padding-left: 20px;                    لتقريب search اكثر نحو الداخل */
+border-radius: 5px;               /*    عملنا زوايا مدورة للاطار */ 
+}
+
+
+.search_box input{                  /* الاطار الداخلي لمحرك بحث داخل الديف  */
+width: 100%;
+border: none;              /* لغينا الاطار الطبيعي الخاص بلبحث */
+outline: none;
+padding: 8px 20px;
+border-radius: 5px;              /*    عملنا زوايا مدورة للاطار */
+ }
+
+.search_box span {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width:768px) {
+    .filter_widget{
+        margin-bottom: 30px;
+    }
+    .filter_widget select{
+        padding: 7px 20px;
+        font-size: 0.9rem;
+    }
+}

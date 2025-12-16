@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/home.css";
-import Helmet from "../componet/Helmet/Helmet";
+import Helmet from "../component/Helmet/Helmet";
 import { Col, Container, Row } from "reactstrap";
 import heroImg from "../assets/images/hero-img.png";
 import { Link } from "react-router-dom";
@@ -8,10 +8,10 @@ import { Link } from "react-router-dom";
 // >>>>حافظة للحركات
 import { motion } from "framer-motion";
 import Services from "../services/Services";
-import ProductsList from "../componet/UI/ProductsList";
+import ProductsList from "../component/UI/ProductsList";
 import products from "../assets/data/products";
 import counterImg from "../assets/images/counter-timer-img.png";
-import Clock from "../componet/UI/Clock";
+import Clock from "../component/UI/Clock";
 const Home = () => {
   const [trendingProductsa, setTrendingProductsa] = useState(products);
   const [bestSalesProducts, setBestSalesProducts] = useState(products);

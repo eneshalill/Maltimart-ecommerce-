@@ -14,7 +14,7 @@ const Routers = () => {
       <Route path="home" element={<Home />} />
       <Route path="shop" element={<Shop />} />
       <Route path="cart" element={<Cart />} />
-      <Route path="shop/:id" element={<ProductDetails />} />
+      <Route path="shop/:id" element={<ProductDetails />} />   {/* هنا نستخدم بارامترز في الراوتر  لصفحة تفاصيل منتج id  لتمريره كبرامتر للمنتج */ }
       <Route path="checkout" element={<Checkout />} />
       <Route path="login" element={<Login />} />
       <Route path="signup" element={<Signup />} />
